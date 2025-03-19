@@ -5,6 +5,7 @@ import java.util.List;
 
 public class SubsetGeneration {
 
+  // DFS - backtracking with recurssion.
   public static List<List<Integer>> subsetBackTracking(int[] nums) {
     List<List<Integer>> result = new ArrayList<>();
     generateSubset(0, nums, new ArrayList<>(), result);

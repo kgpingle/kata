@@ -2,6 +2,7 @@ package org.leetcode.problems;
 
 public class TrappingRainWater {
 
+  // Sliding window algo
   public static int trapRainWater(int[] height) {
     int totalWater = 0, left = 0, right = height.length - 1;
     int leftMax = height[left];
